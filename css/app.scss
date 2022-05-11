@@ -1,27 +1,13 @@
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/brands';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 @import 'colors';
 @import '~bootstrap/scss/bootstrap';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '~animate.css/animate';
-@import 'audit_log_feed';
 @import 'layout';
 @import 'typography';
 @import 'buttons';
-@import 'form';
-@import 'navigation';
-@import 'sidebar';
 @import 'home';
-@import 'custom';
 @import 'footer';
-@import 'table';
-@import 'modal';
-@import 'import';
 
 html {
   margin: 100;
@@ -37,28 +23,6 @@ html {
 html body {
   font-family: 'Montserrat', sans-serif;
 
-  .normal-wrapper {
-    background-color: var(--bs-background);
-    color: white;
-    height: 100%;
-    position: relative;
-    padding-top: 5rem;
-
-    &.modal-open {
-      padding-right: 0 !important;
-    }
-
-    @media (max-width: 860px) {
-      padding-top: 4rem;
-    }
-
-    main.content-container {
-      margin: 0 auto;
-      padding-bottom: 8rem;
-      min-height: calc(100vh - 5rem);
-    }
-  }
-
   .home-wrapper {
     height: 100%;
     color: #24282a;
@@ -67,101 +31,6 @@ html body {
       margin: 0 auto;
       padding-bottom: 8rem;
       min-height: calc(100vh);
-    }
-  }
-}
-
-.badge {
-  height: 36px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 0.75rem;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  overflow: hidden;
-  position: relative;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-
-  &.healthy-false {
-    background-color: var(--bs-primary-25);
-    padding-right: 2.5rem;
-    background-image: url('/images/icons/quarantine-red.svg');
-    background-position: right 0.5rem center;
-    background-repeat: no-repeat;
-    background-size: 1.1rem;
-
-    &:hover {
-      color: white;
-      background-color: var(--bs-primary-50);
-    }
-  }
-
-  &.active:after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    left: 0;
-    right: 0;
-    background: white;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.quarantined {
-  background-image: url('/images/icons/error.svg');
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
-  background-position: right 0.5rem center;
-  padding-right: 2.5rem;
-}
-
-.alert {
-  margin: 2rem 0;
-  border-color: transparent;
-  color: white;
-  font-weight: 500;
-
-  &.alert-info {
-    background-color: var(--bs-info);
-  }
-
-  &.alert-danger {
-    background-color: var(--bs-danger);
-  }
-
-  &.alert-warning {
-    background-color: var(--bs-warning);
-  }
-}
-
-.progress {
-  background: rgba(255, 255, 255, 0.1);
-
-  .progress-bar {
-    background-color: var(--bs-primary);
-    font-weight: 700;
-  }
-
-  &.device-show {
-    height: 1.5rem;
-    margin-top: 0.5rem;
-
-    .progress-bar {
-      height: 1.5rem;
-      font-size: 0.875rem;
-      text-align: right;
-      padding: 0 0.5rem;
-      min-width: 2rem;
     }
   }
 }
