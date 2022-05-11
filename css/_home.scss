@@ -360,44 +360,6 @@ $primary: #a72b2a;
     }
   }
 
-  .home-get-started {
-    margin-top: 10rem;
-
-    .grid {
-      margin-top: 4rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 2rem;
-
-      @media (max-width: 1050px) {
-        grid-template-columns: 1fr;
-        grid-row-gap: 2rem;
-      }
-
-      .item {
-        background: #f6f6f6;
-        border-radius: 4px;
-        padding: 4rem 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (max-width: 1050px) {
-          padding: 2rem;
-        }
-
-        .btn {
-          margin-top: 3rem;
-
-          @media (max-width: 1050px) {
-            margin-top: 2rem;
-          }
-        }
-      }
-    }
-  }
-
   .home-case-studies {
     margin-top: 10rem;
 
