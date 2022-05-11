@@ -5,8 +5,6 @@ import '@popperjs/core'
 import $ from 'jquery'
 import Josh from 'joshjs'
 
-let dates = require('./dates')
-
 new Josh()
 
 $(function () {
@@ -18,8 +16,4 @@ $(function () {
       .addClass('selected')
       .html("Selected File: <div class='file-name'>" + fileName + '</div>')
   })
-})
-
-document.querySelectorAll('.date-time').forEach((d) => {
-  d.innerHTML = dates.formatDateTime(d.innerHTML)
 })
