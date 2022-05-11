@@ -43,8 +43,12 @@
           <img src="images/logo-colored.svg" alt="logo" />
           <img src="images/logo.svg" alt="logo" />
           <div>
-            <a class="btn btn-nav btn-outline-light ml-3" href={Routes.session_path(@conn, :new)}>Log In</a>
-            <a class="btn btn-nav btn-white ml-3" href={Routes.account_path(@conn, :new)}>Try For Free</a>
+            <a class="btn btn-nav btn-white" href="https://github.com/nerves-hub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="btn-icon" aria-hidden="true">
+                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              Explore on GitHub
+            </a>
           </div>
         </div>
 
@@ -52,7 +56,7 @@
           <div class="hero-text">
             <h1>Manage OTA firmware updates across your devices</h1>
             <p>NervesHub is an extensible web service that allows you to manage over-the-air (OTA) firmware updates of devices in the field. Built with Phoenix, NervesHub delivers first-class support for hardware deployments directly from the command line.</p>
-            <a class="btn btn-primary btn-lg btn-home josh-js" data-josh-anim-name="pulse" href={Routes.account_path(@conn, :new)}>Get Started</a>
+            <a class="btn btn-primary btn-lg btn-home josh-js" data-josh-anim-name="pulse" href="https://docs.nerves-hub.org/">Get Started</a>
           </div>
           <div class="hero-image">
             <img src="images/hero.svg" alt="hero image"/>
@@ -131,20 +135,6 @@
               <p>Easily push firmware to your fleet of IoT devices and get important deployment details at a glance. All firmware being pushed is signed with a private encryption key that belongs to your organization.</p>
             </div>
             <img src="images/push-firmware.png" alt="Push firmware" />
-          </div>
-        </div>
-
-        <div class="home-get-started content-container josh-js" data-josh-anim-name="fadeIn">
-          <h2 class="ta-c">Get Started with NervesHub</h2>
-          <div class="grid">
-            <div class="item">
-              <h3>Read the 'Getting Started' pages in our NervesHub docs</h3>
-              <a class="btn btn-primary btn-lg btn-home" target="_blank" rel="noopener noreferrer" href="https://docs.nerves-hub.org/nerves-hub/setup">Get Started Here</a>
-            </div>
-            <div class="item">
-              <h3>Check out our repositories on Github</h3>
-              <a class="btn btn-primary btn-lg btn-home" target="_blank" rel="noopener noreferrer" href="https://github.com/nerves-hub">NervesHub on Github</a>
-            </div>
           </div>
         </div>
 
