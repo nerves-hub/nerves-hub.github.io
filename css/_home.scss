@@ -339,57 +339,8 @@ $primary: #a72b2a;
     }
   }
 
-  .home-case-studies {
-    margin-top: 10rem;
-
-    .grid {
-      margin-top: 4rem;
-      display: grid;
-      grid-template-columns: repeat(3, 22rem);
-      justify-content: space-around;
-      grid-column-gap: 1rem;
-
-      @media (max-width: 1050px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .item {
-        box-shadow: 0 2px 32px 0 rgba(59, 143, 169, 0.3);
-        border-radius: 5px;
-        overflow: hidden;
-        display: grid;
-        grid-template-rows: max-content;
-        width: 22rem;
-
-        @media (max-width: 1050px) {
-          &:last-child {
-            margin-top: 4rem;
-          }
-        }
-
-        @media (max-width: 782px) {
-          &:nth-child(2) {
-            margin-top: 4rem;
-          }
-        }
-
-        .item-text {
-          padding: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        img {
-          width: 100%;
-          border-radius: 5px 5px 0 0;
-        }
-
-        .btn {
-          max-width: 100%;
-        }
-      }
-    }
+  .home-get-started {
+    margin-top: 6rem;
+    text-align: center;
   }
 }
